@@ -5,7 +5,7 @@ To install *RBioFormats* use the `biocLite` installation script in order to reso
 
 ```r
 source("https://bioconductor.org/biocLite.R")
-biocLite("aoles/RBioFormats") # You might need to first run `install.packages("devtools")`
+biocLite("graukatze/RBioFormats") # You might need to first run `install.packages("devtools")`
 ```
 
 ### Mac OS X
