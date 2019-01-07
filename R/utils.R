@@ -3,8 +3,13 @@
 #' Provides the version of the Bio-Formats library embedded in the package.
 #' @export
 #' @template author
-BioFormats.version = function() .jfield("loci/formats/FormatTools", "S", "VERSION")
-
+#' BioFormats.version = function() .jfield("loci/formats/FormatTools", "S", "VERSION")
+BioFormats.version = function() {
+library(rJava)
+.jinit()
+.jaddClassPath("C:\\Users\\Geo\\Downloads")
+.jfield("loci/formats/FormatTools", "S", "VERSION")
+}
 #' Bio-Formats FormatTools Class
 #' 
 #' A utility class for format reader and writer implementations.
